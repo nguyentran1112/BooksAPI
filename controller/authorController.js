@@ -1,4 +1,4 @@
-const { Book, Author } = require("../model/model");
+const { Author } = require("../model/model");
 
 const authorController = {
   addAuthor: async (req, res) => {
