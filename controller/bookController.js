@@ -23,6 +23,14 @@ const bookController = {
         res.status(500).json(error);
     }
   },
+  getABook: async (req, res) => {
+    try {
+        const book = await Book.findById(req.params.id).populate('author');
+        res.status(200).json(book);
+    } catch (error) {
+        res.status(500).json(error);
+    }
+  }
 };
 
 module.exports = bookController;
