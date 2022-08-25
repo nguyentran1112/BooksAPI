@@ -8,5 +8,9 @@ router.post('/',bookController.addBook);
 router.get('/',bookController.getAllBook);
 //get an book
 router.get('/:id', bookController.getABook)
+//update a book
+router.put('/:id', bookController.updateBook);
 
+//Delete book
+router.delete('/:id', bookController.deleteBook);
 module.exports = router;
