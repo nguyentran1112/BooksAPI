@@ -13,6 +13,7 @@ dotenv.config();
 
 mongoose.connect(process.env.MONGODB_URL, () => {
   console.log("Connected to MongoDB");
+  console.log("Database_URL", process.env.MONGODB_URL);
 });
 //code app
 app.use(bodyParser.json({ limit: "50mb" }));
