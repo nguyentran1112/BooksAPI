@@ -2,7 +2,7 @@
 
     "version": 2,
     "env": {
-        "MONGODB_URL": "@mongodb-ur"
+        "MONGODB_URL": "mongodb+srv://cnfit:Nguyen2222@cluster0.3klxkxg.mongodb.net/?retryWrites=true&w=majority"
       },
     "builds": [
       {
