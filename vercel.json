@@ -4,7 +4,7 @@
     },
     "headers": [
       {
-        "source": "/index.js",
+        "source": "/(.*)",
         "headers": [
           {
             "key": "Access-Control-Allow-Origin",
