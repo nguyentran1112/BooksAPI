@@ -1,16 +1,15 @@
 {
-    "env": {
-      "MONGODB_URL": "mongodb+srv://cnfit:Nguyen2222@cluster0.3klxkxg.mongodb.net/?retryWrites=true&w=majority"
-    },
-    "headers": [
+    "version": 2,
+    "builds": [
       {
-        "source": "/(.*)",
-        "headers": [
-          {
-            "key": "Access-Control-Allow-Origin",
-            "value": "*"
-          }
-        ]
+        "src": "./index.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/"
       }
     ]
   }
