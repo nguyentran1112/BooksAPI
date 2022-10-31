@@ -1,5 +1,9 @@
 {
+
     "version": 2,
+    "env": {
+        "MONGODB_URL": "@mongodb-ur"
+      },
     "builds": [
       {
         "src": "./index.js",
