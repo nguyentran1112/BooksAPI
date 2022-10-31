@@ -22,7 +22,7 @@ app.use(morgan());
 app.use("/v1/author", authorRouter);
 app.use("/v1/book", bookRouter);
 app.get("/", (req, res) => {
-  res.send("home");
+  res.send("HOME");
 });
 //const port = 3333;
 //const host = '0.0.0.0';
